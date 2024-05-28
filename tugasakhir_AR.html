@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+
+   <a-scene mindar-image="imageTargetSrc: ./assets2/mind/targets.mind; maxTrack: 12" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+   <a-assets>
+   <a-asset-item id="model1" src="./assets2/arctic_peeper/scene.gltf"></a-asset-item>
+   <a-asset-item id="model2" src="./assets2/bot/scene.gltf"></a-asset-item>
+   <a-asset-item id="model3" src="./assets2/box_robot/scene.gltf"></a-asset-item>
+   <a-asset-item id="model4" src="./assets2/cat/scene.gltf"></a-asset-item>
+   <a-asset-item id="model5" src="./assets2/cute_robot/scene.gltf"></a-asset-item>
+   <a-asset-item id="model6" src="./assets2/fishie/scene.gltf"></a-asset-item>
+   <a-asset-item id="model7" src="./assets2/gundam/scene.gltf"></a-asset-item>
+   <a-asset-item id="model8" src="./assets2/mech_drone/scene.gltf"></a-asset-item>
+   <a-asset-item id="model9" src="./assets2/playground/scene.gltf"></a-asset-item>
+   <a-asset-item id="model10" src="./assets2/ra/scene.gltf"></a-asset-item>
+   <a-asset-item id="model11" src="./assets2/robot_tinju/scene.gltf"></a-asset-item>
+   <a-asset-item id="model12" src="./assets2/toy_robot/scene.gltf"></a-asset-item>
+
+      </a-assets>
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.1 0" scale="370 370 370" src="#model1" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 1">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.2 0" scale="0.007 0.007 0.007" src="#model2" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 2">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.35 0" scale="0.15 0.15 0.15" src="#model3" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 3">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.4 0" scale="0.35 0.35 0.35" src="#model4" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 4">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.1 0" scale="1 1 1" src="#model5" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 5">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.43 0" scale="0.4 0.4 0.4" src="#model6" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 6">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.4 0" scale="0.4 0.4 0.4" src="#model7" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 7">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.6 0" scale="2.5 2.5 2.5" src="#model8" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 8">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.5 0.5 0.5" src="#model9" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 9">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.45 0" scale="0.35 0.35 0.35" src="#model10" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 10">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.45 0" scale="0.0015 0.0015 0.0015" src="#model11" animation-mixer>
+        </a-entity>
+        <a-entity mindar-image-target="targetIndex: 11">
+        <a-gltf-model rotation="0 0 0 " position="0 -0.1 0" scale="0.15 0.15 0.15" src="#model12" animation-mixer>
+        </a-entity>
+
+    </a-scene>
+  </body>
+</html>
